@@ -114,15 +114,6 @@
 
                 $statement->execute();
 
-                // $statement = $pdo->prepare("SELECT password FROM persons WHERE nickname='ellywynn'");
-                // $statement->execute();
-
-                // $result = $statement->setFetchMode(PDO::FETCH_ASSOC);
-
-                // if (password_verify("abcd1234", $statement->fetchAll()[0]['password'])) {
-                //     echo "<h2>PASSWORD VERIFIED</h2>";
-                // }
-
                 // close the connection
                 $pdo = null;
             } catch (PDOException $e) {
